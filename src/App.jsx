@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './Header';
 import Posts from './Posts';
+import SideMenu from './SideMenu'
 
 function App() {
 
@@ -10,10 +11,11 @@ function App() {
     <div className='main'>
       <Header/>
 
+<div style={{display:"flex",justifyContent:"center", alignItems:"center"}}>
 
-      {/* posts & side menu container*/}
+      {/* start posts & side menu container*/}
 
-      <div>
+      <div style={{display:"flex", width:"60%"}}>
 
 
       {/* posts container */}
@@ -34,7 +36,8 @@ function App() {
       </div>
       {/* posts container */}
 
-      <div>
+      <div style={{width:'40%'}}>
+      <SideMenu/>
 
       </div>
 
@@ -42,9 +45,11 @@ function App() {
 
       </div>
 
-      {/* posts & side menu container*/}
+      {/* end posts & side menu container*/}
 
 
+
+</div>
 
 
     </div>
