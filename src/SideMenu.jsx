@@ -19,10 +19,7 @@ export default function SideMenu(){
             <Btn/>
             <Btn/>
             <Btn/>
-            <Btn/>
-            <Btn/>
-            <Btn/>
-            <Btn/>
+
         </div>
     )
 }
