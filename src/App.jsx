@@ -11,7 +11,7 @@ function App() {
     <div className='main'>
       <Header/>
 
-<div style={{display:"flex",justifyContent:"center", alignItems:"center"}}>
+      <div style={{display:"flex",justifyContent:"center", alignItems:"center"}}>
 
       {/* start posts & side menu container*/}
 
@@ -20,38 +20,22 @@ function App() {
 
       {/* posts container */}
       <div style={{width:'60%'}}>
-      <Posts/>
-      <Posts/>
-      <Posts/>
-      <Posts/>
-      <Posts/>
-      <Posts/>
-      <Posts/>
-      <Posts/>
-      <Posts/>
-      <Posts/>
-      <Posts/>
-      <Posts/>
+      <Posts title="اكاديمية ترميز" content="اكاديمية متخصصه لتعلم البرمجة بمختلف لغاتها و تقنياتها" >
+        <h2>20</h2>
+      </Posts>
 
+      <Posts title="hello world" content="this is hello world article" />
+      <Posts title="posts 3" content="this is the body of post 3" />
       </div>
-      {/* posts container */}
 
+      {/* posts container */}
       <div style={{width:'40%'}}>
       <SideMenu/>
-
+   
+      </div>
       </div>
 
-
-
       </div>
-
-      {/* end posts & side menu container*/}
-
-
-
-</div>
-
-
     </div>
 
     </>

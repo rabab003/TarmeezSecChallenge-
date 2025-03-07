@@ -1,13 +1,20 @@
-export default function Posts(){
+import { Children } from "react"
+
+export default function Posts({title, content, children}){
+
     return(
         <div style={{
-            padding:'10px',
+            padding:'20px',
             border:"solid teal 5px",
-            margin:"25px"
+            margin:"25px",
+            textAlign:"center",
         }}>
-            <h2>this is the post title</h2>
-            <hr />
-            <p>this is the post body</p>
+            <p>{children}</p>  
+            <h2>{title}</h2>
+            <hr style={{
+                margin:"15px"
+            }} />
+            <p>{content}</p>
 
         </div>
     )
